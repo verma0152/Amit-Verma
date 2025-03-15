@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Amit Verma - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="profile" id="about">
+            <img src="amit.jpeg" alt="Dr. Amit Verma">
+            <h1>Dr. Amit Verma</h1>
+            <h2>Assistant Professor, CSE Department</h2>
+            <h3>Maharaja Agrasen University, Baddi</h3>
+            <a href="cv.pdf" download class="cv-btn">Download CV</a>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="container">
+        <!-- Qualifications Section -->
+        <section class="card education" id="qualifications">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Qualifications</h2>
+            <div class="content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Ph.D. in Computer Science</h3>
+                        <p>University Name (Year-Year)</p>
+                    </div>
+                    <!-- Add more timeline items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="card skills">
+            <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+            <div class="skill-bars">
+                <div class="skill" data-percent="90%">
+                    <span class="skill-name">Research Methodology</span>
+                    <div class="skill-progress">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <!-- Add more skills -->
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="card publications" id="publications">
+            <h2><i class="fas fa-book-open"></i> Publications</h2>
+            <div class="filter-buttons">
+                <button class="active" onclick="filterPublications('all')">All</button>
+                <button onclick="filterPublications('journal')">Journals</button>
+                <button onclick="filterPublications('conference')">Conferences</button>
+            </div>
+            <div class="publication-list">
+                <div class="publication-item journal">
+                    <h3>Journal Paper Title</h3>
+                    <p>Journal Name, Year</p>
+                </div>
+                <!-- Add more publications -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card contact" id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
